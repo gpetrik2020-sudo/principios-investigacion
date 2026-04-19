@@ -129,6 +129,12 @@ MODULOS = [
     }
 ]
 
+RECURSOS = {
+    "imagen": "11_Utilitaria.png",
+    "canal_youtube": "https://youtube.com/playlist?list=PLgzLP1FQsRNfqGHiMxDHw5kwbrrltIBlI&si=0vXujb_4RTaM-dx9",
+    "textos_md": "textos_md_kn_mk"
+}
+
 RAMAS_LATERALES = [
     {"id": "info-general",   "titulo": "Información general",    "icono": "📋"},
     {"id": "recursos",       "titulo": "Recursos",               "icono": "🎧"},
