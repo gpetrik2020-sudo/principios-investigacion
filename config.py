@@ -5,7 +5,7 @@ CURSO = {
     "logo": "11_Utilitaria.png"
 }
 
-_BASE = "https://lms-edu046.onrender.com/view/"
+_BASE = "https://principios-investigacion.onrender.com/view/"
 
 MODULOS = [
     {

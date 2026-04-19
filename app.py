@@ -40,6 +40,23 @@ def modulo(mod_id):
         ramas=RAMAS_LATERALES, prev=prev_, next=next_,
         content=html or markdown.markdown(m.get('texto', '')))
 
+@app.route('/view/<path:filename>')
+def view_file(filename):
+    path = os.path.join(CONTENT_DIR, filename)
+    if not os.path.exists(path):
+        abort(404)
+    with open(path, 'r', encoding='utf-8') as f:
+        content = f.read()
+    if content.startswith('---'):
+        parts = content.split('---', 2)
+        if len(parts) >= 3:
+            content = parts[2].strip()
+    html = markdown.markdown(content, extensions=['extra', 'toc', 'tables'])
+    return render_template('visor.html',
+        curso=CURSO, m={'titulo': filename, 'num': ''},
+        modulos=MODULOS, ramas=RAMAS_LATERALES,
+        prev=None, next=None, content=html)
+
 @app.route('/recursos')
 def recursos():
     return render_template('recursos.html',
