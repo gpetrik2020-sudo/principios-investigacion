@@ -1,4 +1,4 @@
---- SOURCE: 03_CAPÍTULO 3 No toda pregunta se responde igual Conociendo el Mercado.docx ---
+--- SOURCE: 03_capitulo_3_no_toda_pregunta_kn_mk.md ---
 --- DATASET: EDU046 ---
 
 ## CAPÍTULO 3
