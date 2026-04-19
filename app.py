@@ -13,7 +13,6 @@ def load_md(mod_id):
         return None
     with open(path, 'r', encoding='utf-8') as f:
         content = f.read()
-    # Eliminar frontmatter YAML
     if content.startswith('---'):
         parts = content.split('---', 2)
         if len(parts) >= 3:
@@ -43,20 +42,9 @@ def modulo(mod_id):
 
 @app.route('/recursos')
 def recursos():
-    # Lista todos los MD disponibles
-    mds = []
-    if os.path.exists(CONTENT_DIR):
-        for f in sorted(os.listdir(CONTENT_DIR)):
-            if f.endswith('.md'):
-                mod_id = f.replace('.md', '')
-                m = get_modulo(mod_id)
-                mds.append({
-                    'id': mod_id,
-                    'titulo': m['titulo'] if m else mod_id,
-                    'podcast_url': m.get('podcast_url', '') if m else ''
-                })
     return render_template('recursos.html',
-        curso=CURSO, mds=mds,
+        curso=CURSO,
+        modulos=MODULOS,
         canal_youtube=RECURSOS['canal_youtube'])
 
 if __name__ == '__main__':
