@@ -14,6 +14,7 @@ MODULOS = [
         "imagen": "01_Image_1.jpg",
         "credito": "Norma Mortenson / Pexels",
         "texto": "Bienvenido a Principios de Investigación de Mercados. Antes de entrar en conceptos y métodos, necesitamos hacernos una pregunta simple: ¿qué es realmente un mercado? No es solo un lugar donde se compra y se vende — es una construcción que emerge de decisiones, datos y personas. Este curso te dará las herramientas para leerlo, entenderlo e intervenir en él con criterio.",
+        "podcast_url": "https://www.youtube.com/watch?v=rC6aznusz7M",
         "extras": []
     },
     {
@@ -24,6 +25,7 @@ MODULOS = [
         "imagen": "02_imagen_sobre.jpg",
         "credito": "Luis Sevilla / Pexels",
         "texto": "La investigación de mercados es el proceso sistemático de recopilar, analizar e interpretar información sobre un mercado, sus consumidores y competidores. Su propósito no es acumular datos — es reducir la incertidumbre en la toma de decisiones. Toda empresa que quiera crecer necesita escuchar antes de hablar.",
+        "podcast_url": "https://www.youtube.com/watch?v=UBbfMjKZb_E",
         "extras": []
     },
     {
@@ -34,6 +36,7 @@ MODULOS = [
         "imagen": "05_Imagen_Sobre.jpg",
         "credito": "Ketut Subiyanto / Pexels",
         "texto": "Las empresas que no investigan deciden a ciegas. La investigación de mercados permite identificar oportunidades, anticipar cambios en el comportamiento del consumidor y validar ideas antes de invertir recursos. No es un lujo — es la diferencia entre una estrategia fundamentada y una apuesta.",
+        "podcast_url": "",
         "extras": []
     },
     {
@@ -44,6 +47,7 @@ MODULOS = [
         "imagen": "03_Tipos.jpg",
         "credito": "Liza Summer / Pexels",
         "texto": "No toda investigación se hace igual. La investigación cualitativa nos dice el por qué — motivaciones, percepciones, emociones. La cuantitativa nos dice el cuánto — frecuencias, estadísticas, patrones. La investigación mixta combina ambas para obtener una visión más completa del fenómeno estudiado.",
+        "podcast_url": "https://www.youtube.com/watch?v=gxs8irvey38",
         "extras": []
     },
     {
@@ -54,6 +58,7 @@ MODULOS = [
         "imagen": "04_Imagen_abstracta.jpg",
         "credito": "Google DeepMind / Pexels",
         "texto": "Todo proceso de investigación comienza con una pregunta bien formulada. A partir de ahí se diseña el estudio, se eligen los instrumentos, se recopilan los datos, se analizan y se comunican los resultados. Cada etapa depende de la anterior — un problema mal definido produce resultados inutilizables.",
+        "podcast_url": "https://www.youtube.com/watch?v=RuFH3fQBgwY",
         "extras": []
     },
     {
@@ -64,6 +69,7 @@ MODULOS = [
         "imagen": "05_Imagen_Sobre.jpg",
         "credito": "Ketut Subiyanto / Pexels",
         "texto": "La investigación de mercados no vive en un departamento aislado — alimenta toda la estrategia empresarial. Desde el desarrollo de nuevos productos hasta la fijación de precios, desde la comunicación hasta la distribución. Las organizaciones que integran la investigación en su cultura toman mejores decisiones, más rápido.",
+        "podcast_url": "https://www.youtube.com/watch?v=SepEi_KEXeU",
         "extras": []
     },
     {
@@ -74,6 +80,7 @@ MODULOS = [
         "imagen": "06_Datos.jpg",
         "credito": "cottonbro studio / Pexels",
         "texto": "Los datos no hablan solos — necesitan ser interpretados. El análisis estadístico nos permite encontrar patrones, establecer correlaciones y validar hipótesis. Desde tablas de frecuencia hasta regresiones, las técnicas cuantitativas convierten números en conocimiento accionable.",
+        "podcast_url": "https://www.youtube.com/watch?v=rRJ8ctsISPM",
         "extras": []
     },
     {
@@ -84,6 +91,7 @@ MODULOS = [
         "imagen": "07_Tendencia.jpg",
         "credito": "Mikhail Nilov / Pexels",
         "texto": "El campo de la investigación de mercados está cambiando rápidamente. Big data, inteligencia artificial, etnografía digital, social listening — las herramientas se multiplican. Lo que no cambia es la necesidad de formular buenas preguntas y de interpretar los resultados con criterio crítico.",
+        "podcast_url": "https://www.youtube.com/watch?v=8J19i30fDY0",
         "extras": []
     },
     {
@@ -94,6 +102,7 @@ MODULOS = [
         "imagen": "08_Segmentacion.jpg",
         "credito": "Pixabay / Pexels",
         "texto": "Segmentar un mercado significa dividirlo en grupos homogéneos con características, necesidades o comportamientos similares. No existe un solo mercado — existen múltiples mercados superpuestos. Identificar correctamente los segmentos permite diseñar estrategias más precisas y comunicaciones más relevantes.",
+        "podcast_url": "https://www.youtube.com/watch?v=1qNtZqa5pqg",
         "extras": []
     },
     {
@@ -104,6 +113,7 @@ MODULOS = [
         "imagen": "09_Integracion.jpg",
         "credito": "Mikael Blomkvist / Pexels",
         "texto": "La investigación de mercados cobra sentido cuando se conecta con las decisiones de producto, precio, plaza y promoción. Cada P del marketing mix puede — y debe — estar respaldada por evidencia. Este módulo integra todo lo aprendido en una visión aplicada de la mercadotecnia basada en datos.",
+        "podcast_url": "https://www.youtube.com/watch?v=vLu4plQ08CQ",
         "extras": []
     },
     {
@@ -114,6 +124,7 @@ MODULOS = [
         "imagen": "10_Cierre.jpg",
         "credito": "Tima Miroshnichenko / Pexels",
         "texto": "Has recorrido los principios fundamentales de la investigación de mercados. Ahora sabes que los mercados se construyen, que los datos son artefactos, que la incertidumbre no desaparece — se gestiona. El siguiente paso es aplicar estas herramientas en contextos reales. La investigación es una práctica, no solo un conocimiento.",
+        "podcast_url": "https://www.youtube.com/watch?v=GSlngfhyrqA",
         "extras": []
     }
 ]
