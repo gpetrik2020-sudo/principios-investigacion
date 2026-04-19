@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %}Recursos — {{ curso.titulo }}{% endblock %}
+
+{% block head %}
+<style>
+.rec-wrap { max-width:780px; margin:0 auto; padding:40px 24px 80px; }
+.rec-header {
+  margin-bottom:32px; padding-bottom:16px;
+  border-bottom:1px solid var(--rule);
+  display:flex; align-items:center; gap:16px; flex-wrap:wrap;
+}
+.rec-header h1 {
+  font-family:'Playfair Display',serif;
+  font-size:24px; font-weight:400; flex:1;
+}
+.rec-header a {
+  display:inline-flex; align-items:center; gap:6px;
+  padding:8px 16px; background:#ff0000; color:white;
+  font-size:12px; font-weight:500; border-radius:2px;
+  text-decoration:none; transition:opacity 0.15s;
+}
+.rec-header a:hover { opacity:0.85; }
+.rec-list { display:grid; gap:8px; }
+.rec-item {
+  display:flex; align-items:center; gap:14px;
+  padding:14px 18px; background:white;
+  border:1px solid var(--rule); border-radius:2px;
+  transition:border-color 0.15s;
+}
+.rec-item:hover { border-color:var(--accent2); }
+.rec-num {
+  font-family:'DM Mono',monospace; font-size:11px;
+  color:var(--muted); width:24px; flex-shrink:0;
+}
+.rec-titulo { font-size:14px; color:var(--ink); flex:1; }
+.rec-btns { display:flex; gap:8px; flex-shrink:0; }
+.rec-btns a {
+  padding:5px 12px; font-size:11px; font-weight:500;
+  border-radius:2px; text-decoration:none; transition:all 0.15s;
+  white-space:nowrap;
+}
+.btn-leer {
+  background:var(--cream); color:var(--ink);
+  border:1px solid var(--rule);
+}
+.btn-leer:hover { border-color:var(--accent2); color:var(--accent2); }
+.btn-pod { background:#ff0000; color:white; }
+.btn-pod:hover { opacity:0.85; }
+</style>
+{% endblock %}
+
+{% block content %}
+<div class="rec-wrap">
+  <div class="rec-header">
+    <h1>Recursos del curso</h1>
+    <a href="{{ canal_youtube }}" target="_blank">▶ Canal YouTube completo</a>
+  </div>
+
+  <div class="rec-list">
+    {% for m in modulos %}
+    <div class="rec-item">
+      <span class="rec-num">{{ '%02d'|format(m.num|int) }}</span>
+      <span class="rec-titulo">{{ m.titulo }} — {{ m.subtitulo }}</span>
+      <div class="rec-btns">
+        {% if m.lms_url %}
+        <a class="btn-leer" href="{{ m.lms_url }}" target="_blank">📖 Leer</a>
+        {% endif %}
+        {% if m.podcast_url %}
+        <a class="btn-pod" href="{{ m.podcast_url }}" target="_blank">🎧 Podcast</a>
+        {% endif %}
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
